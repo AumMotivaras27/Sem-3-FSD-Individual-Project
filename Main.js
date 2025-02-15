@@ -210,3 +210,18 @@ function buttonjs(){
 }
 
 /* CHANGE BUTTON CONTENT */
+function changeContent(button) {
+    button.classList.add('clicked');
+    button.textContent = 'Added to Cart';
+    button.disabled = true;
+    button.style.backgroundColor='green'
+    
+    
+    // Optional: Reset button after 2 seconds
+    setTimeout(() => {
+        button.classList.remove('clicked');
+        button.textContent = 'Add To Cart';
+        button.disabled = false;
+        button.style.backgroundColor='var(--first-color)'
+    }, 2000);
+}
