@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Description.css">
+        <link rel="stylesheet" href="Style.css">
         <!--REMIXICON-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     </head>
@@ -64,6 +65,43 @@
             </nav>
         </header>
 
+        <!-- Search -->
+        <div class="search" id="search-content">
+            <form action="" class="search__form">
+                <i class="ri-search-line search__icon"></i>
+                <input type="search" placeholder="what are you looking for?" class="search__input">
+            </form>
+            <i class="ri-close-line search__close" id="search-close"></i>
+        </div>
+        <!-- Login -->
+        <div class="login grid" id="login-content">
+            <form action="" class="login__form grid">
+                <h3 class="login__title">Log In</h3>
+                <div class="login__group grid">
+                    <div>
+                        <label for="login-email" class="login__label">Email</label>
+                        <input type="email" placeholder="Enter Your Email" id="login-email" class="login__input"/>
+                    </div>
+
+                    <div>
+                        <label for="login-pass" class="login__label">Password</label>
+                        <input type="password" placeholder="Enter Your Password" id="login-pass" class="login__input"/>
+                    </div>
+                </div>
+                <div>
+                    <span class="login__signup">
+                        You don't have an account?
+                        <a href="#">Sign Up</a>
+                    </span>
+                    <a href="#" class="login__forgot">
+                        You forgot your password
+                    </a>
+                    <button type="submit" class="login__button button">Log In</button>
+                </div>
+            </form>
+            <i class="ri-close-line login__close" id="login-close"></i>
+        </div>
+
         <div class="book-container" style="margin-top: 75px;">
             <img class="book-cover" src="Images/InsideOutLeadership.png" alt="Book Cover">
             <div class="book-info">
@@ -99,7 +137,7 @@
                     integrity, and purpose-driven leadership.
                 </div>
 
-                <button class="button" onclick="buttonjs()">Buy Now</button>
+                <input type="submit" value="Buy Now" onclick="buttonjs()" class="submitbtn"/>
             </div>
         </div>
 
