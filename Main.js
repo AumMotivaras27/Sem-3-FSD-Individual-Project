@@ -3,6 +3,10 @@ const searchButton = document.getElementById('search-button');
 const searchClose = document.getElementById('search-close');
 const searchContent = document.getElementById('search-content');
 
+function home(){
+    window.location.href = 'Main.html';
+}
+
 /* Search Show */
 if(searchButton){
     searchButton.addEventListener('click', () =>{
